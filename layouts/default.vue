@@ -6,7 +6,7 @@
 </template>
 
 <script>
-	import Header from '~/components/Header/Header';
+	import Header from '~/components/the/Header/Header';
 	
 	export default {
 		name: "Default",
@@ -34,39 +34,5 @@ html {
 *:after {
 	box-sizing: border-box;
 	margin: 0;
-}
-
-.button--green {
-	display: inline-block;
-	border-radius: 4px;
-	border: 1px solid #3b8070;
-	color: #3b8070;
-	text-decoration: none;
-	padding: 10px 30px;
-	margin-right: 15px;
-}
-
-.button--green:hover {
-	color: #fff;
-	background-color: #3b8070;
-}
-
-.button--grey {
-	display: inline-block;
-	border-radius: 4px;
-	border: 1px solid #35495e;
-	color: #35495e;
-	text-decoration: none;
-	padding: 10px 30px;
-	margin-right: 15px;
-}
-
-.button--grey:hover {
-	color: #fff;
-	background-color: #35495e;
-}
-
-.button--green.last, .button--grey.last {
-	margin-right: 0;
 }
 </style>

@@ -1,8 +1,8 @@
+<!-- The Footer component -->
+
 <template>
-	<header class="header">
-		<nuxt-link to="/" class="header__logo">
-			<img src="~/static/logo.png" alt="Logo">
-		</nuxt-link>
+	<header class="the-footer">
+		<p>copyright </p>
 		
 		<nav class="header__nav">
 			<nuxt-link to="/" class="header__nav__item">home</nuxt-link>
@@ -14,4 +14,4 @@
 
 <script></script>
 
-<style src="./Header.scss" lang="scss" scoped></style>
+<style src="./Footer.scss" lang="scss" scoped></style>
