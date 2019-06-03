@@ -1,11 +1,7 @@
-# STATIC
+# The Static Directory
 
-**This directory is not required, you can delete it if you don't want to use it.**
+The static directory is directly mapped to the server root (`/static/robots.txt` is accessible under `http://localhost:3000/robots.txt`) and contains files that likely won't be changed (i.e. the favicon)
 
-This directory contains your static files.
-Each file inside this directory is mapped to `/`.
-Thus you'd want to delete this README.md before deploying to production.
+Example: `/static/robots.txt` is mapped as /robots.txt
 
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/guide/assets#static).
+[More info about Static](https://nuxtjs.org/guide/assets#static)

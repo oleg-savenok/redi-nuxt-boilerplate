@@ -1,7 +1,5 @@
-# LAYOUTS
+# The Layouts Directory
 
-**This directory is not required, you can delete it if you don't want to use it.**
+The layouts directory includes your application layouts. Layouts are used to change the look and feel of your page (for example by including a sidebar).
 
-This directory contains your Application Layouts.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/guide/views#layouts).
+[More info about Layouts](https://nuxtjs.org/guide/views#layouts)
