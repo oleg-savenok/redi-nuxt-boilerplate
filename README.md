@@ -78,6 +78,6 @@ The store directory contains your Vuex Store files. The Vuex Store comes with Nu
 
 ## License
 
-[MIT](https://github.com/cmacmillanmarin/nuxt2_boilerplate/blob/master/LICENSE)
+[MIT](https://github.com/oleg-savenok/redi-nuxt-boilerplate/blob/master/LICENSE)
 
 Copyright (c) 2019-present, Oleg Savenok.

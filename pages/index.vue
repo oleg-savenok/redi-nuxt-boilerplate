@@ -7,7 +7,7 @@
 			<div class="links">
 				<a href="https://vuejs.org/" target="_blank" class="button--green">Vue.js</a>
 				<a href="https://nuxtjs.org/" target="_blank" class="button--green">Nuxt.js</a>
-				<a href="https://github.com/oleg-savenok/nuxt-boilerplate" target="_blank" class="button--grey last">
+				<a href="https://github.com/oleg-savenok/redi-nuxt-boilerplate" target="_blank" class="button--grey last">
 					This project on GitHub
 				</a>
 			</div>
