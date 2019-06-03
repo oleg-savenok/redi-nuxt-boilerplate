@@ -2,9 +2,9 @@
 
 <template>
 	<nav class="header__nav">
-		<HeaderNavItem link="/" text="home"/>
-		<HeaderNavItem link="/about" text="about"/>
-		<HeaderNavItem link="/contact" text="contact"/>
+		<HeaderNavItem link="/" text="Home"/>
+		<HeaderNavItem link="/about" text="About"/>
+		<HeaderNavItem link="/contact" text="Contact"/>
 	</nav>
 </template>
 
