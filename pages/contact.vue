@@ -1,5 +1,7 @@
+<!-- [pages] Contact --- component -->
+
 <template>
-	<div class="__page">
+	<div class="container">
 		<h2>Contact page</h2>
 	</div>
 </template>
@@ -11,5 +13,3 @@ export default {
 	mixins: [Head],
 };
 </script>
-
-<style src="./page.scss" lang="scss" scoped></style>

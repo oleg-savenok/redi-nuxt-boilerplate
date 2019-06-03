@@ -1,7 +1,10 @@
-.header {
-	position: absolute;
+/* [components|the] Header --- styles */
+
+.the--header {
+	position: fixed;
 	left: 0;
 	top: 0;
+	z-index: 100;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -10,12 +13,4 @@
 	padding: 0 30px;
 	background-color: #fff;
 	border-bottom: 1px lightgray solid;
-	
-	&__logo {
-		height: 40%;
-		
-		img {
-			height: 100%;
-		}
-	}
 }
