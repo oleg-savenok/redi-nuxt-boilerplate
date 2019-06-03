@@ -1,12 +1,17 @@
 /* [assets|theme] Theme styles */
 
 // Colors list
-$white: #f7f7f7;
+$white: #fafafa;
 $black: #101010;
-$bluewood: #35495e;
-$viridian: #3b8070;
+$vue-blue: #35495e;
+$vue-green: #3b8070;
 
 // Theme setting
 $base-color: $white;
 $contrast-color: $black;
-$accent-color: $bluewood;
+$accent-color: $vue-blue;
+
+body, html {
+	color: $contrast-color;
+	background-color: $base-color;
+}

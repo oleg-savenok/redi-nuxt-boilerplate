@@ -30,7 +30,7 @@
 	animation: goright 0.5s linear forwards 3.5s;
 	border-left: 87.5px solid transparent;
 	border-right: 87.5px solid transparent;
-	border-bottom: 150px solid #3b8070;
+	border-bottom: 150px solid $vue-green;
 }
 
 .Triangle--three {
@@ -39,7 +39,7 @@
 	animation: goright 0.5s linear forwards 3.5s;
 	border-left: 70px solid transparent;
 	border-right: 70px solid transparent;
-	border-bottom: 120px solid #35495e;
+	border-bottom: 120px solid $vue-blue;
 }
 
 .Triangle--four {
@@ -48,7 +48,7 @@
 	animation: godown 0.5s linear forwards 3s;
 	border-left: 35px solid transparent;
 	border-right: 35px solid transparent;
-	border-bottom: 60px solid #fff;
+	border-bottom: 60px solid $base-color;
 }
 
 @keyframes turn {

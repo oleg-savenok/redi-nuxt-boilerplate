@@ -2,16 +2,16 @@
 	display: block;
 	padding: 16px 0;
 	margin: 0;
-	font-weight: 600;
 	font-size: 48px;
-	color: #35495e;
+	font-weight: 600;
+	color: $accent-color;
 	letter-spacing: 1px;
 }
 
 .subtitle {
-	font-weight: 300;
 	font-size: 32px;
-	color: #526488;
+	font-weight: 300;
+	color: lighten($accent-color, 20);
 	word-spacing: 5px;
 	margin: 0;
 	padding: 0 0 24px 0;

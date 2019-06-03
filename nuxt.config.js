@@ -21,12 +21,12 @@ module.exports = {
 	// Global Styles --------------------------------------------------------------------------------------------------/
 	css: [
 		'~/assets/global/global.scss',
-		'~/assets/theme/theme.scss',
 	],
 	
 	// Styles resources for share variables, mixins, functions across all style files (no @import needed) -------------/
 	styleResources: {
 		scss: [
+			'~/assets/theme/theme.scss',
 			//'~/assets/vars/*.scss',
 			//'~/assets/abstracts/_mixins.scss'
 		],
