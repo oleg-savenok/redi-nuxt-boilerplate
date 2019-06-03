@@ -1,4 +1,4 @@
-<!-- [The] Header --- component -->
+<!-- [components|the] Header --- component -->
 
 <template>
 	<header class="the--header">

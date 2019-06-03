@@ -1,4 +1,4 @@
-<!-- [The] HeaderNavItem --- component -->
+<!-- [components|the] HeaderNavItem --- component -->
 
 <template>
 	<nuxt-link :to="link" class="header__nav__item"> {{ text }} </nuxt-link>

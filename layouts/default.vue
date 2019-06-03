@@ -1,4 +1,4 @@
-<!-- [layouts] Default -->
+<!-- [layouts] Default --- component -->
 
 <template>
 	<div>

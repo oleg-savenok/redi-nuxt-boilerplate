@@ -1,3 +1,5 @@
+<!-- [pages] Contact --- component -->
+
 <template>
 	<div class="container">
 		<h2>Contact page</h2>

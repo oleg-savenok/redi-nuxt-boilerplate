@@ -1,3 +1,5 @@
+<!-- [pages] About --- component -->
+
 <template>
 	<div class="container">
 		<h2>About page</h2>

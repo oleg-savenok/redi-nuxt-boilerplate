@@ -1,3 +1,5 @@
+<!-- [pages] Index --- component -->
+
 <template>
 	<section class="container-center">
 		<div>

@@ -1,4 +1,4 @@
-<!-- [The] HeaderNav --- component -->
+<!-- [components|the] HeaderNav --- component -->
 
 <template>
 	<nav class="header__nav">

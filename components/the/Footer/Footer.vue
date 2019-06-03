@@ -1,4 +1,4 @@
-<!-- The Footer component -->
+<!-- [components|the] Footer --- component -->
 
 <template>
 	<footer class="the--footer">
