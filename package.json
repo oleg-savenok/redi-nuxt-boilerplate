@@ -1,7 +1,7 @@
 {
     "name": "redi-nuxt-boilerplate",
     "version": "1.0.0",
-    "description": "Nuxt.js boilerplate for fast starting new project from Redi agency",
+    "description": "Nuxt.js boilerplate for fast starting new project by Redi agency",
     "author": "Oleg Savenok",
     "private": true,
     "scripts": {
