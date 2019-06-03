@@ -1,5 +1,8 @@
 
 # Redi Nuxt.js Boilerplate
+Start your new nuxt project in seconds
+
+[Demo](https://redi-nuxt-boilerplate.herokuapp.com/)
 
 ## Setup & Development
 

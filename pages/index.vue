@@ -3,7 +3,7 @@
 		<div>
 			<logo />
 			<h1 class="title">Nuxt.js Boilerplate by <a target="_blank" href="https://redi.agency">Redi agency</a>.</h1>
-			<h2 class="subtitle">Start your further nuxt project in seconds</h2>
+			<h2 class="subtitle">Start your new nuxt project in seconds</h2>
 			<div class="links">
 				<a href="https://vuejs.org/" target="_blank" class="button--green">Vue.js</a>
 				<a href="https://nuxtjs.org/" target="_blank" class="button--green">Nuxt.js</a>
