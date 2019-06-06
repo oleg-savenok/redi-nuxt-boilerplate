@@ -26,9 +26,9 @@ module.exports = {
 	// Styles resources for share variables, mixins, functions across all style files (no @import needed) -------------/
 	styleResources: {
 		scss: [
+			'~/assets/variables/variables.scss',
+			'~/assets/mixins/mixins.scss',
 			'~/assets/theme/theme.scss',
-			//'~/assets/vars/*.scss',
-			//'~/assets/abstracts/_mixins.scss'
 		],
 	},
 

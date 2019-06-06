@@ -1,0 +1,21 @@
+/* [assets|variables] Global variables */
+
+// Breakpoints for media queries
+$breakpoints: (
+	'mobile-s': 320,
+	'mobile-l': 480,
+	'tablet-s': 768,
+	'tablet-l': 1050,
+	'desktop-s': 1280,
+	'desktop-m': 1600,
+	'desktop-l': 1920,
+);
+
+// Paddings for grid
+$pad-mobile-s: 20;
+$pad-mobile-l: 25;
+$pad-tablet-s: 30;
+$pad-tablet-l: 40;
+$pad-desktop-s: 50;
+$pad-desktop-m: 60;
+$pad-desktop-l: 80;

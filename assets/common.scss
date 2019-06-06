@@ -1,0 +1,23 @@
+// Common file for base styles
+
+// Normalize.css
+@import 'global/normalize';
+
+// Variables
+@import 'variables/variables';
+
+// Fonts
+@import 'global/fonts';
+
+// Remove cursor
+* {
+    //cursor: none;
+}
+
+a {
+	color: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	text-decoration: none;
+	user-select: none;
+}

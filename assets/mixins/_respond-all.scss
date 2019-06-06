@@ -1,0 +1,25 @@
+/* [assets|mixins] Responsive mixin for media  */
+
+@mixin respond-all($value, $mobile-s, $mobile-l, $tablet-s, $tablet-l, $desktop-s, $desktop-m, $desktop-l) {
+	@include respond-to('mobile-s') {
+		#{$value}: $mobile-s;
+	};
+	@include respond-to('mobile-l') {
+		#{$value}: $mobile-l;
+	};
+	@include respond-to('tablet-s') {
+		#{$value}: $tablet-s;
+	};
+	@include respond-to('tablet-l') {
+		#{$value}: $tablet-l;
+	};
+	@include respond-to('desktop-s') {
+		#{$value}: $desktop-s;
+	};
+	@include respond-to('desktop-m') {
+		#{$value}: $desktop-m;
+	};
+	@include respond-to('desktop-l') {
+		#{$value}: $desktop-l;
+	};
+}
