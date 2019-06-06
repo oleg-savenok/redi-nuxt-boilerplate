@@ -11,7 +11,7 @@
 				<ButtonLink text="Nuxt.js" link="https://nuxtjs.org/" />
 				<ButtonLink
 					text="This project on GitHub"
-					color="grey"
+					color="blue"
 					link="https://github.com/oleg-savenok/redi-nuxt-boilerplate"
 				/>
 			</div>

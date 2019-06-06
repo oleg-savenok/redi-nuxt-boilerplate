@@ -18,14 +18,27 @@ module.exports = {
 	// Customize the progress-bar color -------------------------------------------------------------------------------/
 	loading: { color: '#fff' },
 
-	// Global CSS -----------------------------------------------------------------------------------------------------/
-	css: [],
+	// Global Styles --------------------------------------------------------------------------------------------------/
+	css: [
+		'~/assets/global/global.scss',
+	],
+	
+	// Styles resources for share variables, mixins, functions across all style files (no @import needed) -------------/
+	styleResources: {
+		scss: [
+			'~/assets/variables/variables.scss',
+			'~/assets/mixins/mixins.scss',
+			'~/assets/theme/theme.scss',
+		],
+	},
 
 	// Plugins to load before mounting the App ------------------------------------------------------------------------/
 	plugins: [],
 
 	// Nuxt.js modules ------------------------------------------------------------------------------------------------/
-	modules: [],
+	modules: [
+		'@nuxtjs/style-resources',
+	],
 
 	// Build configuration --------------------------------------------------------------------------------------------/
 	build: {

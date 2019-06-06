@@ -6,25 +6,26 @@
 	border: 1px solid;
 	text-decoration: none;
 	padding: 12px 32px;
+	font-size: 18px;
 	transition: all 0.15s;
 }
 
 .button-link--green {
-	border-color: #3b8070;
-	color: #3b8070;
+	border-color: $vue-green;
+	color: $vue-green;
 	
 	&:hover {
-		color: #fff;
-		background-color: #3b8070;
+		color: $base-color;
+		background-color: $vue-green;
 	}
 }
 
-.button-link--grey {
-	border-color: #35495e;
-	color: #35495e;
+.button-link--blue {
+	border-color: $vue-blue;
+	color: $vue-blue;
 	
 	&:hover {
-		color: #fff;
-		background-color: #35495e;
+		color: $base-color;
+		background-color: $vue-blue;
 	}
 }
