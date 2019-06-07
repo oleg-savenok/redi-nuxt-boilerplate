@@ -2,23 +2,29 @@
 
 .title {
 	display: block;
-	padding: 16px 0;
+	padding: rem-from-px(16) 0;
 	margin: 0;
-	font-size: 48px;
+	font-size: rem-from-px(48);
 	font-weight: 600;
 	color: $accent-color;
-	letter-spacing: 1px;
 }
 
 .subtitle {
-	font-size: 32px;
+	font-size: rem-from-px(32);
 	font-weight: 300;
 	color: lighten($accent-color, 20);
-	word-spacing: 5px;
 	margin: 0;
-	padding: 0 0 24px 0;
+	padding: 0 0 rem-from-px(24) 0;
 }
 
 .links {
-	padding-top: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding-top: rem-from-px(16);
+	
+	.base--button-link {
+		margin-left: rem-from-px(16);
+	}
 }
