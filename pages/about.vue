@@ -1,8 +1,8 @@
 <!-- [pages] About --- component -->
 
 <template>
-	<div class="container">
-		<h2>About page</h2>
+	<div class="container--p">
+		<h2 class="title">About page</h2>
 	</div>
 </template>
 
@@ -13,3 +13,5 @@ export default {
 	mixins: [Head],
 };
 </script>
+
+<style src="./about.scss" lang="scss" scoped></style>

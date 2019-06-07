@@ -19,5 +19,3 @@
 		}
 	}
 </script>
-
-<style src="./layouts.scss" lang="scss"></style>

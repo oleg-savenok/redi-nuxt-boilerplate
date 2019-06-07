@@ -1,7 +1,7 @@
 <!-- [pages] Index --- component -->
 
 <template>
-	<section class="container-center">
+	<section class="container--c-p">
 		<div>
 			<HomeLogo />
 			<h1 class="title">Nuxt.js Boilerplate by <a target="_blank" href="https://redi.agency">Redi agency</a>.</h1>
@@ -36,4 +36,4 @@ export default {
 };
 </script>
 
-<style src="./index.scss" lang="scss"></style>
+<style src="./index.scss" lang="scss" scoped></style>
