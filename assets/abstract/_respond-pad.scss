@@ -1,9 +1,9 @@
-/* [assets|mixins] Mixin for adding adaptive indentation  */
+/* [assets|abstract] Mixin for adding adaptive indentation  */
 
 @mixin respond-pad($value) {
 	@include respond-all(
 		$value,
-		$pad-mobile-s,
+		$pad-default,
 		$pad-mobile-l,
 		$pad-tablet-s,
 		$pad-tablet-l,

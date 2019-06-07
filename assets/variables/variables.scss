@@ -2,7 +2,6 @@
 
 // Breakpoints for media queries
 $breakpoints: (
-	'mobile-s': 320,
 	'mobile-l': 480,
 	'tablet-s': 768,
 	'tablet-l': 1050,
@@ -12,10 +11,19 @@ $breakpoints: (
 );
 
 // Paddings for grid
-$pad-mobile-s: 20px;
-$pad-mobile-l: 25px;
+$pad-default: 10px;
+$pad-mobile-l: 15px;
 $pad-tablet-s: 30px;
 $pad-tablet-l: 40px;
 $pad-desktop-s: 50px;
 $pad-desktop-m: 60px;
 $pad-desktop-l: 80px;
+
+// HTML font sizes for media queries
+$res-font-default: 56px; // 0-480
+$res-font-mobile-l: 60px; // 480-768
+$res-font-tablet-s: 62px; // 768-1024
+$res-font-tablet-l: 64px; // 1024-1280
+$res-font-desktop-s: 68px; // 1280-1600
+$res-font-desktop-m: 70px; // 1600-1920
+$res-font-desktop-l: 72px; // 1920++

@@ -27,7 +27,7 @@ module.exports = {
 	styleResources: {
 		scss: [
 			'~/assets/variables/variables.scss',
-			'~/assets/mixins/mixins.scss',
+			'~/assets/abstract/abstract.scss',
 			'~/assets/theme/theme.scss',
 		],
 	},

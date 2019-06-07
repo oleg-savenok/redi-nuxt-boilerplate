@@ -5,7 +5,17 @@ html {
 	font-weight: 500;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	@include respond-all(font-size, 34px, 42px, 46px, 56px, 48px, 56px, 72px);
+	
+	@include respond-all(
+			font-size,
+			$res-font-default,
+			$res-font-mobile-l,
+			$res-font-tablet-s,
+			$res-font-tablet-l,
+			$res-font-desktop-s,
+			$res-font-desktop-m,
+			$res-font-desktop-l
+	);
 }
 
 h1 {

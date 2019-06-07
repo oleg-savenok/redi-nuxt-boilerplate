@@ -1,7 +1,8 @@
-/* [assets|mixins] Common file with mixins */
+/* [assets|abstract] Common file with mixins */
 
 @import "./align";
 @import "./column";
+@import "./rem-from-px";
 @import "./respond-to";
 @import "./respond-all";
 @import "./respond-pad";
