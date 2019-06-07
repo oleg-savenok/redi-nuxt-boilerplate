@@ -3,10 +3,11 @@
 @mixin respond-pad($value) {
 	@include respond-all(
 		$value,
-		$pad-default,
+		$pad-mobile-xs,
+		$pad-mobile-s,
+		$pad-mobile-m,
 		$pad-mobile-l,
-		$pad-tablet-s,
-		$pad-tablet-l,
+		$pad-mobile-xl,
 		$pad-desktop-s,
 		$pad-desktop-m,
 		$pad-desktop-l

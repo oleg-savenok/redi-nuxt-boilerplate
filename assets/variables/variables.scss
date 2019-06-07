@@ -1,29 +1,40 @@
 /* [assets|variables] Global variables */
 
 // Breakpoints for media queries
-$breakpoints: (
-	'mobile-l': 480,
-	'tablet-s': 768,
-	'tablet-l': 1050,
-	'desktop-s': 1280,
-	'desktop-m': 1600,
-	'desktop-l': 1920,
+$breakpointsMobile: (
+	'xs': 320,
+	's': 480,
+	'm': 768,
+	'l': 900,
+	'xl': 1024,
+);
+//
+$breakpointsDesktop: (
+	's': 1025,
+	'm': 1400,
+	'l': 1920,
 );
 
+
 // Paddings for grid
-$pad-default: 10px;
-$pad-mobile-l: 15px;
-$pad-tablet-s: 30px;
-$pad-tablet-l: 40px;
+$pad-mobile-xs: 10px;
+$pad-mobile-s: 15px;
+$pad-mobile-m: 20px;
+$pad-mobile-l: 30px;
+$pad-mobile-xl: 40px;
+//
 $pad-desktop-s: 50px;
 $pad-desktop-m: 60px;
-$pad-desktop-l: 80px;
+$pad-desktop-l: 75px;
+
 
 // HTML font sizes for media queries
-$res-font-default: 56px; // 0-480
-$res-font-mobile-l: 60px; // 480-768
-$res-font-tablet-s: 62px; // 768-1024
-$res-font-tablet-l: 64px; // 1024-1280
-$res-font-desktop-s: 68px; // 1280-1600
-$res-font-desktop-m: 70px; // 1600-1920
+$res-font-mobile-xs: 56px; // 0-320
+$res-font-mobile-s: 58px; // 0-480
+$res-font-mobile-m: 60px; // 0-768
+$res-font-mobile-l: 64px; // 0-900
+$res-font-mobile-xl: 66px; // 0-1024
+//
+$res-font-desktop-s: 68px; // 1025++
+$res-font-desktop-m: 70px; // 1400++
 $res-font-desktop-l: 72px; // 1920++

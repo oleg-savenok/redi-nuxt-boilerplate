@@ -1,24 +1,28 @@
 /* [assets|abstract] Responsive mixin for media  */
 
-@mixin respond-all($value, $default, $mobile-l, $tablet-s, $tablet-l, $desktop-s, $desktop-m, $desktop-l) {
-	#{$value}: $default;
-	
-	@include respond-to('mobile-l') {
+@mixin respond-all($value, $mobile-xs, $mobile-s, $mobile-m, $mobile-l, $mobile-xl, $desktop-s, $desktop-m, $desktop-l) {
+	@include respond-mobile('xl') {
+		#{$value}: $mobile-xl;
+	};
+	@include respond-mobile('l') {
 		#{$value}: $mobile-l;
 	};
-	@include respond-to('tablet-s') {
-		#{$value}: $tablet-s;
+	@include respond-mobile('m') {
+		#{$value}: $mobile-m;
 	};
-	@include respond-to('tablet-l') {
-		#{$value}: $tablet-l;
+	@include respond-mobile('s') {
+		#{$value}: $mobile-s;
 	};
-	@include respond-to('desktop-s') {
+	@include respond-mobile('xs') {
+		#{$value}: $mobile-xs;
+	};
+	@include respond-desktop('s') {
 		#{$value}: $desktop-s;
 	};
-	@include respond-to('desktop-m') {
+	@include respond-desktop('m') {
 		#{$value}: $desktop-m;
 	};
-	@include respond-to('desktop-l') {
+	@include respond-desktop('l') {
 		#{$value}: $desktop-l;
 	};
 }
