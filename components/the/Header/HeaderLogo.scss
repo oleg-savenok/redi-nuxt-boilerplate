@@ -1,7 +1,7 @@
 /* [components|the] HeaderLogo --- styles */
 
 .header__logo {
-	height: rem-from-px(28);
+	height: rem-from-px(26);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -13,9 +13,13 @@
 	}
 	
 	&__caption {
-		font-size: rem-from-px(24);
+		font-size: rem-from-px(22);
 		font-weight: 600;
 		margin-left: 8px;
 		color: $accent-color;
+		
+		@include respond-mobile(s) {
+			display: none;
+		}
 	}
 }

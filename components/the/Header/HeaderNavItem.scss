@@ -3,7 +3,11 @@
 .header__nav__item {
 	text-decoration: none;
 	margin-left: rem-from-px(16);
-	font-size: rem-from-px(24);
+	font-size: rem-from-px(18);
 	font-weight: 400;
 	color: lighten($contrast-color, 30);
+	
+	@include respond-mobile(xs) {
+		font-size: rem-from-px(26);
+	}
 }

@@ -7,6 +7,11 @@
 	font-size: rem-from-px(48);
 	font-weight: 600;
 	color: $accent-color;
+	
+	@include respond-mobile(s) {
+		padding: rem-from-px(12) 0;
+		font-size: rem-from-px(36);
+	}
 }
 
 .subtitle {
@@ -15,6 +20,13 @@
 	color: lighten($accent-color, 20);
 	margin: 0;
 	padding: 0 0 rem-from-px(24) 0;
+	
+	@include respond-mobile(s) {
+		@include column(3,4);
+		padding: 0 0 rem-from-px(12) 0;
+		font-size: rem-from-px(24);
+		margin: 0 auto;
+	}
 }
 
 .links {
@@ -26,5 +38,13 @@
 	
 	.base--button-link {
 		margin-left: rem-from-px(16);
+		
+		@include respond-mobile(s) {
+			margin-left: 0;
+			
+			&:nth-child(1) { @include column(1,3); }
+			&:nth-child(2) { @include column(1,3); margin-left: rem-from-px(16); }
+			&:nth-child(3) { margin-top: rem-from-px(16); }
+		}
 	}
 }

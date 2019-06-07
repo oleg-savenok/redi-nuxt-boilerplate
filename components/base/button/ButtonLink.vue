@@ -1,7 +1,7 @@
 <!-- [components|base] ButtonLink --- component -->
 
 <template>
-	<a :href="link" target="_blank" :class="['base--button-link', `button-link--${color}`]"> {{ text }} </a>
+	<a :href="link" target="_blank" :class="['base--button-link', `button-link--${color}`]">{{ text }}</a>
 </template>
 
 <script>
