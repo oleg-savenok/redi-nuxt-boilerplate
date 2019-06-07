@@ -10,7 +10,8 @@
 	align-items: center;
 	height: 60px;
 	width: 100%;
-	padding: 0 30px;
+	@include respond-pad(padding-left);
+	@include respond-pad(padding-right);
 	background-color: $base-color;
 	color: $contrast-color;
 	border-bottom: 1px lighten($contrast-color, 85) solid;

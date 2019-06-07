@@ -1,0 +1,70 @@
+/* [assets|global] Layout styles */
+
+.__page {
+	padding: 0;
+	margin: 0;
+}
+
+
+/*
+	CONTAINER ----------------------------------------------------------------------------------------------------------
+*/
+
+// Simple container
+.container {
+	margin: 0 auto;
+	padding: 0
+}
+
+// Container with padding - both sides
+.container--p {
+	@extend .container;
+	@include respond-pad(padding-left);
+	@include respond-pad(padding-right);
+}
+
+// Container with padding - left side
+.container--pl {
+	@extend .container;
+	@include respond-pad(padding-left);
+}
+
+// Container with padding - right side
+.container--pr {
+	@extend .container;
+	@include respond-pad(padding-right);
+}
+
+
+/*
+	CENTER CONTAINER ---------------------------------------------------------------------------------------------------
+*/
+
+// Container with centered content
+.container--c {
+	@extend .container;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+// Container with centered content and padding - both sides
+.container--c-p {
+	@extend .container--c;
+	@include respond-pad(padding-left);
+	@include respond-pad(padding-right);
+}
+
+// Container with centered content and padding - left side
+.container--c-pl {
+	@extend .container--c;
+	@include respond-pad(padding-left);
+}
+
+// Container with centered content and padding - right side
+.container--c-pr {
+	@extend .container--c;
+	@include respond-pad(padding-right);
+}
