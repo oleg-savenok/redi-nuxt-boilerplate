@@ -1,0 +1,17 @@
+/* [assets|global] Global styles for all this project */
+
+@import "./fonts";
+@import "./typography";
+@import "./layout";
+@import "./normalize";
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+a {
+	color: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	text-decoration: none;
+}

@@ -1,6 +1,8 @@
+<!-- [pages] About --- component -->
+
 <template>
-	<div class="__page">
-		<h2>About page</h2>
+	<div class="container--p">
+		<h2 class="title">About page</h2>
 	</div>
 </template>
 
@@ -12,4 +14,4 @@ export default {
 };
 </script>
 
-<style src="./page.scss" lang="scss" scoped></style>
+<style src="./about.scss" lang="scss" scoped></style>

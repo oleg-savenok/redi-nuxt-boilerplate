@@ -1,0 +1,12 @@
+/* [assets|abstract] Responsive mixin for desktop media queries  */
+
+@mixin respond-desktop($name) {
+	@if map-has-key($breakpointsDesktop, $name) {
+		@media only screen and (min-width: #{map-get($breakpointsDesktop, $name)}px) {
+			@content;
+		}
+	}
+	@else {
+		@warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. Please make sure it is defined in `$breakpoints` map.";
+	}
+}

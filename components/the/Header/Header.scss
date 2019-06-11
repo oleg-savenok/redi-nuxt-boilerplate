@@ -1,0 +1,18 @@
+/* [components|the] Header --- styles */
+
+.the--header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 100;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 60px;
+	width: 100%;
+	background-color: $base-color;
+	color: $contrast-color;
+	border-bottom: 1px lighten($contrast-color, 85) solid;
+	@include respond-pad(padding-left);
+	@include respond-pad(padding-right);
+}
