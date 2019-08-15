@@ -1,0 +1,11 @@
+/* [components|atom] Breadcrumb --- styles */
+
+.A-breadcrumb {
+	text-decoration: none;
+	overflow: hidden;
+	height: $header-logo-font-size;
+	font-size: $header-logo-font-size;
+	line-height: $header-logo-font-size;
+	font-weight: $header-font-weight;
+	//letter-spacing: 0.02em;
+}

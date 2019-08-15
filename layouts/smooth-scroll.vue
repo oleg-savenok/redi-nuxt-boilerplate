@@ -1,10 +1,14 @@
-<!-- [layouts] Default --- component -->
+<!-- [layouts] Smooth scroll --- component -->
 
 <template>
-	<div class="__app --dark">
+	<div>
 		<Header />
 		<div class="__page">
-			<nuxt />
+			<div class="__scroll">
+				<div class="__scroll__content">
+					<nuxt />
+				</div>
+			</div>
 		</div>
 	</div>
 </template>

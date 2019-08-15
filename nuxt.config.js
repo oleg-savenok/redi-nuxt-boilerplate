@@ -12,7 +12,10 @@ module.exports = {
 			},
 			{ hid: 'description', name: 'description', content: '' },
 		],
-		link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }],
+		link: [
+			{ rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
+			{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' } // Material icons
+		],
 	},
 
 	// Customize the progress-bar color -------------------------------------------------------------------------------/
@@ -21,6 +24,7 @@ module.exports = {
 	// Global Styles --------------------------------------------------------------------------------------------------/
 	css: [
 		'~/assets/global/global.scss',
+		'~/assets/theme/theme.scss',
 	],
 	
 	// Styles resources for share variables, mixins, functions across all style files (no @import needed) -------------/
@@ -28,7 +32,6 @@ module.exports = {
 		scss: [
 			'~/assets/variables/variables.scss',
 			'~/assets/abstract/abstract.scss',
-			'~/assets/theme/theme.scss',
 		],
 	},
 
