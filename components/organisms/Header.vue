@@ -1,22 +1,22 @@
 <!-- [components|the] Header --- component -->
 
 <template>
-	<header class="the--header">
-		<HeaderLogo />
-		<HeaderNav />
+	<header class="O-header">
+		<Logo />
+		<Navigation />
 	</header>
 </template>
 
 <script>
 	// Components
-	import HeaderLogo from '~/components/the/Header/HeaderLogo';
-	import HeaderNav from '~/components/the/Header/HeaderNav';
+	import Logo from '../molecules/Logo';
+	import Navigation from '../molecules/Navigation';
 	
 	export default {
 		name: 'Header',
 		components: {
-			HeaderLogo,
-			HeaderNav
+			Logo,
+			Navigation
 		}
 	}
 </script>

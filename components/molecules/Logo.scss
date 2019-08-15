@@ -1,0 +1,15 @@
+/* [components|the] HeaderLogo --- styles */
+
+.M-logo {
+	height: $header-height;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+	&__divider {
+		height: 20px;
+		width: 2px;
+		margin: 0 9px;
+		background-color: $contrast-color;
+	}
+}

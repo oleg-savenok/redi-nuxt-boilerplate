@@ -12,7 +12,10 @@ module.exports = {
 			},
 			{ hid: 'description', name: 'description', content: '' },
 		],
-		link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }],
+		link: [
+			{ rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
+			{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' } // Material icons
+		],
 	},
 
 	// Customize the progress-bar color -------------------------------------------------------------------------------/

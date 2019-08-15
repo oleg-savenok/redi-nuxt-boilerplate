@@ -1,0 +1,22 @@
+/* [components|atom] Signature --- styles */
+
+.A-signature {
+	display: flex;
+	justify-content: flex-start;
+	text-decoration: none;
+	font-size: $header-logo-font-size;
+	font-weight: $header-font-weight;
+	letter-spacing: 0.02em;
+	
+	&__seo {
+		display: none;
+	}
+	
+	&__firstName {
+		margin-right: $header-logo-space;
+	}
+	
+	&__lastName {
+		font-weight: 700;
+	}
+}
