@@ -20,4 +20,4 @@
 	};
 </script>
 
-<style src="./NavigationItem.scss" lang="scss" scoped></style>
+<style src="./NavigationItem.scss" lang="scss"></style>

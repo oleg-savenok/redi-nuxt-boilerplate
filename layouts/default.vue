@@ -1,7 +1,7 @@
 <!-- [layouts] Default --- component -->
 
 <template>
-	<div>
+	<div class="__app --dark">
 		<Header />
 		<div class="__page">
 			<nuxt />

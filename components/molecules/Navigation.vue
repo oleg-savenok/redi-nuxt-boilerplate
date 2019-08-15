@@ -21,4 +21,4 @@
 	}
 </script>
 
-<style src="./Navigation.scss" lang="scss" scoped></style>
+<style src="./Navigation.scss" lang="scss"></style>

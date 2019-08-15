@@ -51,6 +51,6 @@
 	};
 </script>
 
-<style src="./Breadcrumb.scss" lang="scss" scoped></style>
+<style src="./Breadcrumb.scss" lang="scss"></style>
 
 

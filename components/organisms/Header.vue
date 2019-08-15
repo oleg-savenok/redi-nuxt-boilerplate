@@ -21,4 +21,4 @@
 	}
 </script>
 
-<style src="./Header.scss" lang="scss" scoped></style>
+<style src="./Header.scss" lang="scss"></style>

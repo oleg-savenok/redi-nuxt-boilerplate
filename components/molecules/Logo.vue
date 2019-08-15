@@ -26,6 +26,6 @@
 	};
 </script>
 
-<style src="./Logo.scss" lang="scss" scoped></style>
+<style src="./Logo.scss" lang="scss"></style>
 
 

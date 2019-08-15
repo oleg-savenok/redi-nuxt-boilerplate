@@ -3,15 +3,19 @@
 // Colors list
 $white: #fafafa;
 $black: #101010;
-$vue-blue: #35495e;
-$vue-green: #3b8070;
+$theme-transition: 0.25s;
 
-// Theme setting
-$base-color: $black;
-$contrast-color: $white;
-$accent-color: $vue-blue;
+.__app.--dark {
+	--contrast-color: #fafafa;
+	--primary-color: #101010;
+}
 
-body, html {
-	color: $contrast-color;
-	background-color: $base-color;
+.__app.--light {
+	--contrast-color: #101010;
+	--primary-color: #fafafa;
+}
+
+.__app {
+	color: var(--contrast-color);
+	background-color: var(--primary-color);
 }

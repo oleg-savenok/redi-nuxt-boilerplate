@@ -14,4 +14,4 @@
 	};
 </script>
 
-<style src="./Signature.scss" lang="scss" scoped></style>
+<style src="./Signature.scss" lang="scss"></style>
