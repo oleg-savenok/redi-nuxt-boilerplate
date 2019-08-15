@@ -6,7 +6,6 @@
 	text-decoration: none;
 	font-size: $header-logo-font-size;
 	font-weight: $header-font-weight;
-	letter-spacing: 0.02em;
 	
 	&__seo {
 		display: none;
@@ -14,9 +13,11 @@
 	
 	&__firstName {
 		margin-right: $header-logo-space;
+		letter-spacing: 0.005em;
 	}
 	
 	&__lastName {
 		font-weight: 700;
+		letter-spacing: 0.02em;
 	}
 }

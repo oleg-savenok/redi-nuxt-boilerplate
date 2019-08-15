@@ -3,7 +3,16 @@
 // Colors list
 $white: #fafafa;
 $black: #101010;
-$theme-transition: 0.25s;
+$theme-transition: 0.2s;
+
+.__app {
+	min-width: 100vw;
+	min-height: 100vh;
+	color: var(--contrast-color);
+	background-color: var(--primary-color);
+	transition: background-color $theme-transition,
+				color $theme-transition;
+}
 
 .__app.--dark {
 	--contrast-color: #fafafa;
@@ -15,7 +24,6 @@ $theme-transition: 0.25s;
 	--primary-color: #fafafa;
 }
 
-.__app {
-	color: var(--contrast-color);
-	background-color: var(--primary-color);
+* {
+	transition: background-color 0.15s;
 }
