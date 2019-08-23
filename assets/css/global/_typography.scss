@@ -1,4 +1,4 @@
-/* [assets|global] Fonts styles for all this project */
+/* [assets|css|global] Fonts styles for all this project */
 
 html {
 	font-family: 'Wavehaus', sans-serif;
@@ -22,23 +22,27 @@ html {
 h1 {
 	font-size: 1rem;
 }
+
 h2 {
 	font-size: 0.83rem;
 }
+
 h3 {
 	font-size: 0.66rem;
 }
+
 h4 {
 	font-size: 0.42rem;
 }
+
 h5 {
 	font-size: 0.33rem;
 }
+
 h6 {
 	font-size: 0.25rem;
 }
-p,
-a,
-li {
+
+p, a, li {
 	font-size: 0.33rem;
 }

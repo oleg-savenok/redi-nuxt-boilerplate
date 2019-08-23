@@ -1,4 +1,4 @@
-/* [assets|abstract] Responsive mixin for mobile media queries  */
+/* [assets|css|abstract] Responsive mixin for mobile media queries  */
 
 @mixin respond-mobile($name) {
 	@if map-has-key($breakpointsMobile, $name) {

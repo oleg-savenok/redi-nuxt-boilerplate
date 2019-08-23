@@ -1,4 +1,4 @@
-/* [assets|abstract] Mixin for define with based on grid */
+/* [assets|css|abstract] Mixin for define width based on grid */
 
 @mixin column($width, $from) {
 	width: $width / $from * 100%;
