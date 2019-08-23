@@ -1,0 +1,12 @@
+/* [assets|css|abstract] Responsive mixin for mobile media queries  */
+
+@mixin respond-mobile($name) {
+	@if map-has-key($breakpointsMobile, $name) {
+		@media only screen and (max-width: #{map-get($breakpointsMobile, $name)}px) {
+			@content;
+		}
+	}
+	@else {
+		@warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. Please make sure it is defined in `$breakpoints` map.";
+	}
+}

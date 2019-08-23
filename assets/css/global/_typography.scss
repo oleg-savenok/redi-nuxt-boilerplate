@@ -1,0 +1,48 @@
+/* [assets|css|global] Fonts styles for all this project */
+
+html {
+	font-family: 'Wavehaus', sans-serif;
+	font-weight: 500;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	@include respond-all(
+		font-size,
+		$res-font-mobile-xs,
+		$res-font-mobile-l,
+		$res-font-mobile-m,
+		$res-font-mobile-l,
+		$res-font-mobile-xl,
+		$res-font-desktop-s,
+		$res-font-desktop-m,
+		$res-font-desktop-l
+	);
+}
+
+h1 {
+	font-size: 1rem;
+}
+
+h2 {
+	font-size: 0.83rem;
+}
+
+h3 {
+	font-size: 0.66rem;
+}
+
+h4 {
+	font-size: 0.42rem;
+}
+
+h5 {
+	font-size: 0.33rem;
+}
+
+h6 {
+	font-size: 0.25rem;
+}
+
+p, a, li {
+	font-size: 0.33rem;
+}

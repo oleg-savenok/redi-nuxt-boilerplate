@@ -1,0 +1,19 @@
+{
+	"head": {
+		"baseTitle": "Nuxt.js Boilerplate",
+		"googleUser": "",
+		"fbUser": "",
+		"twUser": ""
+	},
+	"plugins": [
+		{
+			"src": "~/plugins/Anime.js",
+			"ssr": false
+		},
+		{
+			"src": "~/plugins/Scroll.js",
+			"ssr": false
+		}
+	],
+	"buildIgnore": []
+}

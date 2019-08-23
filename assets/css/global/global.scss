@@ -1,0 +1,40 @@
+/* [assets|css|global] Global styles for all this project */
+
+@import "./fonts";
+@import "./typography";
+@import "./layout";
+@import "./normalize";
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+a {
+	color: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	text-decoration: none;
+}
+
+html, body {
+	position: fixed;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	height: 100%;
+	width: 100%;
+}
+
+#__nuxt, #__layout, .__page, .__app {
+	height: 100%;
+	width: 100%;
+}
+
+.__scroll {
+	position: relative;
+	opacity: 1;
+	z-index: 1;
+}
+
+.--scroll {
+	will-change: opacity, transform;
+}

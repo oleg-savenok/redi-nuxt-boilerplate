@@ -1,0 +1,16 @@
+/* [components|atom] Theme Switcher --- styles */
+
+.A-themeSwitcher {
+	cursor: pointer;
+	user-select: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: $header-height;
+	height: $header-height;
+	margin: 0 ( -($header-height - $header-font-size ) / 2);
+	
+	&__icon {
+		font-size: $header-font-size;
+	}
+}

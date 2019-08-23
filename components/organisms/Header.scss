@@ -1,0 +1,17 @@
+/* [components|the] Header --- styles */
+
+.O-header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 100;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+
+	@include respond-pad(padding-top);
+	@include respond-pad(padding-left);
+	@include respond-pad(padding-right);
+	margin-top: - ($header-height - $header-font-size) / 2;
+}

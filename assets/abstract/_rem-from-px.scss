@@ -1,5 +1,0 @@
-/* [assets|abstract] Mixin for define rem size based on pixels */
-
-@function rem-from-px($size) {
-	@return ($size * 1px / $res-font-desktop-l) * 1rem;
-}

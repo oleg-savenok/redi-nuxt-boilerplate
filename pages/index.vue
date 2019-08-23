@@ -1,39 +1,60 @@
-<!-- [pages] Index --- component -->
+<!-- [pages] Home --- component -->
 
 <template>
-	<section class="container--c-p">
-		<div>
-			<HomeLogo />
-			<h1 class="title">Nuxt.js Boilerplate by <a target="_blank" href="https://redi.agency">Redi agency</a>.</h1>
-			<h2 class="subtitle">Start your new nuxt project in seconds</h2>
-			<div class="links">
-				<ButtonLink text="Vue.js" link="https://vuejs.org/" />
-				<ButtonLink text="Nuxt.js" link="https://nuxtjs.org/" />
-				<ButtonLink
-					text="This project on GitHub"
-					color="blue"
-					link="https://github.com/oleg-savenok/redi-nuxt-boilerplate"
-				/>
-			</div>
+	<div class="content --scroll">
+		<div class="hero">
+			<h2 class="title">Here will be projects</h2>
 		</div>
-	</section>
+		
+		<div class="img"></div>
+	</div>
 </template>
 
 <script>
-// Base components
-import ButtonLink from '~/components/base/button/ButtonLink';
-// Page components
-import HomeLogo from '~/components/page/home/HomeLogo';
-// Mixins
-import Head from '~/mixins/Head';
-
-export default {
-	components: {
-		ButtonLink,
-		HomeLogo,
-	},
-	mixins: [Head],
-};
+	// Vuex
+	import { mapState, mapMutations } from "vuex";
+	
+	// Mixins
+	import Head from '~/mixins/Head';
+	import LifecycleHooks from '~/mixins/LifecycleHooks';
+	import Transitions from '~/mixins/Transitions';
+	
+	// Event dispatcher
+	import { Events, TRANSITION_ENTER_DONE } from "~/assets/js/Events";
+	
+	export default {
+		name: 'Index',
+		mixins: [ Head, LifecycleHooks, Transitions ],
+		computed: {
+			...mapState({
+				vertical: state=>state.scroll.verticalScroll
+			})
+		},
+		methods: {
+			...mapMutations({
+				setScrollActive: "scroll/setActive",
+				setScrollDirection: "scroll/setScrollDirection",
+				setScrollTo: "scroll/updateScrollTo"
+			}),
+			
+			// Enable scroll
+			enableScroll() {
+				this.setScrollDirection(this.vertical);
+				this.setScrollActive(true);
+			},
+			
+			/* MOUNTED -------------------------------------------------------------------------------------------------- */
+			addListeners() {
+				this.enterHandler = this.enableScroll.bind(this);
+				Events.addEventListener(TRANSITION_ENTER_DONE, this.enterHandler);
+			},
+			
+			/* BEFORE DESTROY ------------------------------------------------------------------------------------------- */
+			removeListeners() {
+				Events.removeEventListener(TRANSITION_ENTER_DONE, this.enterHandler);
+			},
+		},
+	};
 </script>
 
 <style src="./index.scss" lang="scss" scoped></style>
