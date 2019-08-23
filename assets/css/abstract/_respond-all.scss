@@ -1,4 +1,4 @@
-/* [assets|abstract] Responsive mixin for media  */
+/* [assets|css|abstract] Responsive mixin for media  */
 
 @mixin respond-all($value, $mobile-xs, $mobile-s, $mobile-m, $mobile-l, $mobile-xl, $desktop-s, $desktop-m, $desktop-l) {
 	@include respond-mobile('xl') {

@@ -1,3 +1,5 @@
+const Manifest = require("./config/manifest");
+
 module.exports = {
 	mode: 'universal',
 
@@ -23,20 +25,20 @@ module.exports = {
 
 	// Global Styles --------------------------------------------------------------------------------------------------/
 	css: [
-		'~/assets/global/global.scss',
-		'~/assets/theme/theme.scss',
+		'~/assets/css/global/global.scss',
+		'~/assets/css/theme/theme.scss',
 	],
 	
 	// Styles resources for share variables, mixins, functions across all style files (no @import needed) -------------/
 	styleResources: {
 		scss: [
-			'~/assets/variables/variables.scss',
-			'~/assets/abstract/abstract.scss',
+			'~/assets/css/variables/variables.scss',
+			'~/assets/css/abstract/abstract.scss',
 		],
 	},
 
 	// Plugins to load before mounting the App ------------------------------------------------------------------------/
-	plugins: [],
+	plugins: Manifest.plugins,
 
 	// Nuxt.js modules ------------------------------------------------------------------------------------------------/
 	modules: [

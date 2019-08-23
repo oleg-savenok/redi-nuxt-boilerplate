@@ -1,3 +1,5 @@
+/* [mixins] Head attributes */
+
 export default {
 	head() {
 		return {

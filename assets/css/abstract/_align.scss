@@ -1,4 +1,4 @@
-// Align mixin
+/* [assets|css|abstract] Mixin for absolute position align */
 
 @mixin align($horizontal, $vertical) {
     @if $horizontal == 'c' and $vertical == 'c' {

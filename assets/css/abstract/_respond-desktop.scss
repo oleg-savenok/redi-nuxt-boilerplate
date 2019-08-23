@@ -1,4 +1,4 @@
-/* [assets|abstract] Responsive mixin for desktop media queries  */
+/* [assets|css|abstract] Responsive mixin for desktop media queries  */
 
 @mixin respond-desktop($name) {
 	@if map-has-key($breakpointsDesktop, $name) {
