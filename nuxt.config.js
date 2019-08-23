@@ -1,3 +1,5 @@
+const Manifest = require("./config/manifest");
+
 module.exports = {
 	mode: 'universal',
 
@@ -36,7 +38,7 @@ module.exports = {
 	},
 
 	// Plugins to load before mounting the App ------------------------------------------------------------------------/
-	plugins: [],
+	plugins: Manifest.plugins,
 
 	// Nuxt.js modules ------------------------------------------------------------------------------------------------/
 	modules: [
