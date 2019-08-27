@@ -1,7 +1,7 @@
 <!-- [layouts] Default --- component -->
 
 <template>
-	<div class="__app --dark">
+	<div class="__app" :class="{ '--dark': this.isDark, '--light': this.isLight }">
 		<Header />
 		<div ref="scroll" class="__scroll">
 			<nuxt ref="page" />
@@ -34,6 +34,8 @@
 		computed: {
 			...mapState({
 				loaded: state=>state.loaded,
+				isDark: state => state.theme.isDark,
+				isLight: state => state.theme.isLight,
 				scrollPoint: state=>state.scroll.point,
 				scrollActive: state=>state.scroll.active,
 				scrollTo: state=>state.scroll.scrollTo,
