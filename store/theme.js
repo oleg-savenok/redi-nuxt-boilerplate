@@ -15,7 +15,7 @@ export const mutations = {
 };
 
 export const actions = {
-	toggleTheme({ commit, state }) {
+	switchTheme({ commit, state }) {
 		if (state.isDark) {
 			commit('updateThemeLight', true);
 			commit('updateThemeDark', false);

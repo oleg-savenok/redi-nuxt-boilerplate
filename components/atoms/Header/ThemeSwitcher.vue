@@ -1,7 +1,7 @@
 <!-- [components|atom] Theme Switcher --- component -->
 
 <template>
-	<div @click="toggleTheme" class="A-themeSwitcher _c">
+	<div @click="switchTheme" class="A-themeSwitcher _c">
 		<i class="A-themeSwitcher__icon material-icons">brightness_medium</i>
 	</div>
 </template>
@@ -13,7 +13,7 @@ export default {
 	name: 'ThemeSwitcher',
 	methods: {
 		...mapActions({
-			toggleTheme: "theme/toggleTheme",
+			switchTheme: "theme/switchTheme",
 		}),
 	}
 };
