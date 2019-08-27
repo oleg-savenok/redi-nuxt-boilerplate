@@ -1,11 +1,12 @@
 <!-- [layouts] Default --- component -->
 
 <template>
-	<div class="__app --dark">
+	<div class="__app" :class="{ '--dark': this.isDark, '--light': this.isLight }">
 		<Header />
 		<div ref="scroll" class="__scroll">
 			<nuxt ref="page" />
 		</div>
+		<Mouse />
 	</div>
 </template>
 
@@ -18,6 +19,7 @@
 	
 	// Components
 	import Header from '~/components/organisms/Header';
+	import Mouse from '~/components/organisms/Mouse';
 	
 	// Event dispatcher
 	import { Events, TRANSITION_ENTER_DONE, TRANSITION_LEAVE_DONE } from "~/assets/js/Events";
@@ -26,11 +28,14 @@
 		name: 'Default',
 		components: {
 			Header,
+			Mouse
 		},
 		mixins: [ LifecycleHooks ],
 		computed: {
 			...mapState({
 				loaded: state=>state.loaded,
+				isDark: state => state.theme.isDark,
+				isLight: state => state.theme.isLight,
 				scrollPoint: state=>state.scroll.point,
 				scrollActive: state=>state.scroll.active,
 				scrollTo: state=>state.scroll.scrollTo,

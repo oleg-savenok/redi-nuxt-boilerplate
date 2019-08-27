@@ -1,5 +1,4 @@
-//
-// store/scroll.js
+/* [store] Scroll */
 
 export const state = ()=>({
     active: false,
