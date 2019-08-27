@@ -1,7 +1,7 @@
 /* [components|atom] Theme Switcher --- styles */
 
 .A-themeSwitcher {
-	cursor: pointer;
+	--cursor: hover;
 	user-select: none;
 	display: flex;
 	justify-content: center;

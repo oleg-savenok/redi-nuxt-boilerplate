@@ -1,7 +1,7 @@
 <!-- [components|atom] Theme Switcher --- component -->
 
 <template>
-	<div @click="themeHandle" class="A-themeSwitcher">
+	<div @click="themeHandle" class="A-themeSwitcher _c">
 		<i class="A-themeSwitcher__icon material-icons">brightness_medium</i>
 	</div>
 </template>
