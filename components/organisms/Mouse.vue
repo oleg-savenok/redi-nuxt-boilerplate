@@ -11,30 +11,48 @@ import TweenLite from 'gsap';
 import { mapState } from 'vuex';
 
 export default {
-	name: 'ActionCursor',
+	name: 'Mouse',
 	computed: {
 		...mapState({
-			position: (state) => state.mouse.position,
-			scale: (state) => state.mouse.scale,
+			isVisible: state => state.mouse.isVisible,
+			position: state => state.mouse.position,
+			scale: state => state.mouse.scale,
+			alpha: state => state.mouse.alpha,
+			duration: state => state.mouse.duration,
 		}),
 	},
 	watch: {
 		position() {
 			this.moving();
 		},
+		isVisible() {
+			this.changeVisibility();
+		},
 		scale() {
 			this.setScale();
 		},
 	},
 	methods: {
+		changeVisibility() {
+			if (this.isVisible) {
+				TweenLite.to(this.$refs.cursor, this.duration.show, {
+					alpha: this.alpha,
+					delay: this.duration.move
+				});
+			} else {
+				TweenLite.to(this.$refs.cursor, this.duration.hide, {
+					alpha: this.alpha,
+				});
+			}
+		},
 		moving() {
-			TweenLite.to(this.$refs.cursor, 0.05, {
+			TweenLite.to(this.$refs.cursor, this.duration.move, {
 				x: this.position.x,
 				y: this.position.y,
 			});
 		},
 		setScale() {
-			TweenLite.to(this.$refs.circle, 0.2, {
+			TweenLite.to(this.$refs.circle, this.duration.hover, {
 				scaleX: this.scale,
 				scaleY: this.scale,
 			});

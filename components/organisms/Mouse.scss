@@ -16,6 +16,7 @@ $cursor-size: 16px;
 	width: 0;
 	height: 0;
 	mix-blend-mode: difference;
+	opacity: 0;
 	
 	&__circle {
 		position: absolute;
