@@ -1,7 +1,7 @@
 <!-- [components|organisms] Mouse --- component -->
 
 <template>
-	<div ref="cursor" class="O-cursor" :style="{ mixBlendMode: this.mixMode }">
+	<div ref="cursor" class="O-cursor">
 		<div ref="circle" class="O-cursor__circle"></div>
 	</div>
 </template>
@@ -16,7 +16,6 @@ export default {
 		...mapState({
 			position: (state) => state.mouse.position,
 			scale: (state) => state.mouse.scale,
-			mixMode: (state) => state.mouse.mixMode,
 		}),
 	},
 	watch: {

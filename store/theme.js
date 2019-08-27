@@ -3,6 +3,8 @@
 export const state = () => ({
 	isDark: true,
 	isLight: false,
+	darkColor: '#101010',
+	lightColor: '#fafafa'
 });
 
 export const mutations = {
