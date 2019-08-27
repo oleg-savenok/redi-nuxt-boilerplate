@@ -13,6 +13,10 @@
 		{
 			"src": "~/plugins/Scroll.js",
 			"ssr": false
+		},
+		{
+			"src": "~/plugins/Mouse.js",
+			"ssr": false
 		}
 	],
 	"buildIgnore": []

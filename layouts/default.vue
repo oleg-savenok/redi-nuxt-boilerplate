@@ -6,6 +6,7 @@
 		<div ref="scroll" class="__scroll">
 			<nuxt ref="page" />
 		</div>
+		<Mouse />
 	</div>
 </template>
 
@@ -18,6 +19,7 @@
 	
 	// Components
 	import Header from '~/components/organisms/Header';
+	import Mouse from '~/components/organisms/Mouse';
 	
 	// Event dispatcher
 	import { Events, TRANSITION_ENTER_DONE, TRANSITION_LEAVE_DONE } from "~/assets/js/Events";
@@ -26,6 +28,7 @@
 		name: 'Default',
 		components: {
 			Header,
+			Mouse
 		},
 		mixins: [ LifecycleHooks ],
 		computed: {

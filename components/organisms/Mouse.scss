@@ -1,0 +1,28 @@
+/* [components|organisms] Cursor --- styles */
+
+$cursor-size: 16px;
+
+* {
+	cursor: none;
+}
+
+.O-cursor {
+	position: fixed;
+	left: 0;
+	top: 0;
+	user-select: none;
+	pointer-events: none;
+	z-index: 10000;
+	width: 0;
+	height: 0;
+	
+	&__circle {
+		position: absolute;
+		@include align(c,c);
+		width: $cursor-size;
+		height: $cursor-size;
+		border-radius: 50%;
+		background-color: var(--contrast-color);
+	}
+	
+}

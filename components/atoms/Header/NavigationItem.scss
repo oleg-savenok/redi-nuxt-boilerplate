@@ -1,6 +1,7 @@
 /* [components|the] HeaderNavItem --- styles */
 
 .A-navigation__item {
+	--cursor: hover;
 	text-decoration: none;
 	margin-right: $header-nav-space;
 	font-size: $header-font-size;

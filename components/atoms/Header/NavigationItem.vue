@@ -1,7 +1,7 @@
 <!-- [components|the] HeaderNavItem --- component -->
 
 <template>
-	<nuxt-link :to="link" class="A-navigation__item"> {{ text }} </nuxt-link>
+	<nuxt-link :to="link" class="A-navigation__item _c"> {{ text }} </nuxt-link>
 </template>
 
 <script>
