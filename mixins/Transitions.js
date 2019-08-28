@@ -17,12 +17,9 @@ export default {
             Events.dispatchEvent(TRANSITION_LEAVE);
         },
         leave(el, done) {
-	        this.$anime({
-		        targets: el,
-		        opacity: [1, 0],
-		        duration: 300,
-		        easing: 'easeInOutCubic',
-		        complete: function() {
+	        this.$tween.to(el, 0.3, {
+		        alpha: 0,
+		        onComplete: function() {
 			        done();
 			        Events.dispatchEvent(TRANSITION_LEAVE_DONE);
 		        }
@@ -32,12 +29,9 @@ export default {
             Events.dispatchEvent(TRANSITION_ENTER);
         },
         enter(el, done) {
-	        this.$anime({
-		        targets: el,
-		        opacity: [0, 1],
-		        duration: 400,
-		        easing: 'easeInOutCubic',
-		        complete: function() {
+	        this.$tween.to(el, 0.4,{
+		        alpha: 1,
+		        onComplete: function() {
 			        done();
 			        Events.dispatchEvent(TRANSITION_ENTER_DONE);
 		        }
