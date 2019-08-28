@@ -1,29 +1,36 @@
 /* [store] Theme */
 
 export const state = () => ({
-	isDark: true,
-	isLight: false,
-	darkColor: '#101010',
-	lightColor: '#fafafa'
+	theme: 'dark',
+	colors: {
+		black: '#101010',
+		white: '#fafafa',
+	},
+	schema: {
+		primary: '#101010',
+		contrast: '#fafafa',
+	},
 });
 
 export const mutations = {
-	updateThemeDark(state, mode) {
-		state.isDark = mode;
+	setTheme(state, value) {
+		state.theme = value;
 	},
-	updateThemeLight(state, mode) {
-		state.isLight = mode;
+	setSchemaColor(state, payload) {
+		state.schema[payload.color] = payload.value;
 	},
 };
 
 export const actions = {
 	switchTheme({ commit, state }) {
-		if (state.isDark) {
-			commit('updateThemeLight', true);
-			commit('updateThemeDark', false);
+		if (state.theme === 'dark') {
+			commit('setTheme', 'light');
+			commit('setSchemaColor', { color: 'primary', value: state.colors.white, });
+			commit('setSchemaColor', { color: 'contrast', value: state.colors.black, });
 		} else {
-			commit('updateThemeDark', true);
-			commit('updateThemeLight', false);
+			commit('setTheme', 'dark');
+			commit('setSchemaColor', { color: 'primary', value: state.colors.black, });
+			commit('setSchemaColor', { color: 'contrast', value: state.colors.white, });
 		}
 	},
 };
