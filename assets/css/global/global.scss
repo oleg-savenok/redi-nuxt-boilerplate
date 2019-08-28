@@ -29,6 +29,17 @@ html, body {
 	width: 100%;
 }
 
+.__app {
+	color: var(--contrast-color);
+	background-color: var(--primary-color);
+	transition: background-color $theme-transition,
+				color $theme-transition;
+}
+
+* {
+	transition: background-color $theme-transition;
+}
+
 .__scroll {
 	position: relative;
 	opacity: 1;
