@@ -186,7 +186,7 @@ export default class Scroll {
 
     getChildren() {
         this.dom.children = [];
-        const children = this.dom.section.querySelectorAll(".--scroll");
+        const children = this.dom.section.querySelectorAll("._s");
         for (const child of children) {
             const isImg = child.tagName === "IMG";
             const imgs = Array.from(child.querySelectorAll("img"));

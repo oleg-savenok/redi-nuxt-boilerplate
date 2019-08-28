@@ -2,7 +2,7 @@
 
 <template>
 	<div>
-		<div class="--scroll">
+		<div class="_s">
 			<div class="hero">
 				<h2 class="title">Here will be projects</h2>
 			</div>
