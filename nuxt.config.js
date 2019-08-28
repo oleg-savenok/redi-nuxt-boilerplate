@@ -24,7 +24,7 @@ module.exports = {
 	loading: { color: '#fff' },
 
 	// Global Styles --------------------------------------------------------------------------------------------------/
-	css: ['~/assets/css/global/global.scss', '~/assets/css/theme/theme.scss'],
+	css: ['~/assets/css/global/global.scss'],
 
 	// Styles resources for share variables, mixins, functions across all style files (no @import needed) -------------/
 	styleResources: {
