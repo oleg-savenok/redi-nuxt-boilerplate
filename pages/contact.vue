@@ -1,12 +1,14 @@
 <!-- [pages] Contact --- component -->
 
 <template>
-	<div class="content --scroll">
-		<div class="hero">
-			<h2 class="title">Contact page</h2>
+	<div>
+		<div class="--scroll">
+			<div class="hero">
+				<h2 class="title">Contact page</h2>
+			</div>
+			
+			<div class="img"></div>
 		</div>
-		
-		<div class="img"></div>
 	</div>
 </template>
 

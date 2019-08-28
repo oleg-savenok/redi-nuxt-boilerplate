@@ -7,7 +7,6 @@
 </template>
 
 <script>
-import TweenLite from 'gsap';
 import { mapState } from 'vuex';
 
 export default {
@@ -35,24 +34,24 @@ export default {
 	methods: {
 		changeVisibility() {
 			if (this.isVisible) {
-				TweenLite.to(this.$refs.cursor, this.duration.show, {
+				this.$tween.to(this.$refs.cursor, this.duration.show, {
 					alpha: this.alpha,
 					delay: this.duration.move
 				});
 			} else {
-				TweenLite.to(this.$refs.cursor, this.duration.hide, {
+				this.$tween.to(this.$refs.cursor, this.duration.hide, {
 					alpha: this.alpha,
 				});
 			}
 		},
 		moving() {
-			TweenLite.to(this.$refs.cursor, this.duration.move, {
+			this.$tween.to(this.$refs.cursor, this.duration.move, {
 				x: this.position.x,
 				y: this.position.y,
 			});
 		},
 		setScale() {
-			TweenLite.to(this.$refs.circle, this.duration.hover, {
+			this.$tween.to(this.$refs.circle, this.duration.hover, {
 				scaleX: this.scale,
 				scaleY: this.scale,
 			});

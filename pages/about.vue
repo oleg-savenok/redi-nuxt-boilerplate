@@ -1,12 +1,14 @@
 <!-- [pages] About --- component -->
 
 <template>
-	<div class="content --scroll">
-		<div class="hero">
-			<h2 class="title">About page</h2>
+	<div>
+		<div class="--scroll">
+			<div class="hero">
+				<h2 class="title">About page</h2>
+			</div>
+			
+			<div class="img"></div>
 		</div>
-		
-		<div class="img"></div>
 	</div>
 </template>
 

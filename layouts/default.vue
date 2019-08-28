@@ -4,7 +4,7 @@
 	<div class="__app" :style="{ '--primary-color': this.schema.primary, '--contrast-color': this.schema.contrast }">
 		<Header />
 		<div ref="scroll" class="__scroll">
-			<nuxt ref="page" />
+			<nuxt ref="page" class="__page"/>
 		</div>
 		<Mouse />
 	</div>

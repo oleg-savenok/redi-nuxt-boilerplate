@@ -46,6 +46,10 @@ html, body {
 	z-index: 1;
 }
 
+.__page {
+	opacity: 0;
+}
+
 .--scroll {
 	will-change: opacity, transform;
 }

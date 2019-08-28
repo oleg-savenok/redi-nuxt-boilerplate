@@ -7,7 +7,7 @@
 	},
 	"plugins": [
 		{
-			"src": "~/plugins/Anime.js",
+			"src": "~/plugins/GSAP.js",
 			"ssr": false
 		},
 		{
