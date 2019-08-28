@@ -8,15 +8,15 @@ $cursor-size: 16px;
 
 .O-cursor {
 	position: fixed;
+	z-index: 10000;
 	left: 0;
 	top: 0;
-	user-select: none;
-	pointer-events: none;
-	z-index: 10000;
 	width: 0;
 	height: 0;
-	mix-blend-mode: difference;
 	opacity: 0;
+	user-select: none;
+	pointer-events: none;
+	mix-blend-mode: difference;
 	
 	&__circle {
 		position: absolute;
