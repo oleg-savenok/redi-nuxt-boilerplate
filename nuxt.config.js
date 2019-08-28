@@ -1,4 +1,4 @@
-const Manifest = require("./config/manifest");
+const Manifest = require('./config/manifest');
 
 module.exports = {
 	mode: 'universal',
@@ -16,7 +16,7 @@ module.exports = {
 		],
 		link: [
 			{ rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
-			{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' } // Material icons
+			{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' }, // Material icons
 		],
 	},
 
@@ -24,26 +24,18 @@ module.exports = {
 	loading: { color: '#fff' },
 
 	// Global Styles --------------------------------------------------------------------------------------------------/
-	css: [
-		'~/assets/css/global/global.scss',
-		'~/assets/css/theme/theme.scss',
-	],
-	
+	css: ['~/assets/css/global/global.scss'],
+
 	// Styles resources for share variables, mixins, functions across all style files (no @import needed) -------------/
 	styleResources: {
-		scss: [
-			'~/assets/css/variables/variables.scss',
-			'~/assets/css/abstract/abstract.scss',
-		],
+		scss: ['~/assets/css/variables/variables.scss', '~/assets/css/abstract/abstract.scss'],
 	},
 
 	// Plugins to load before mounting the App ------------------------------------------------------------------------/
 	plugins: Manifest.plugins,
 
 	// Nuxt.js modules ------------------------------------------------------------------------------------------------/
-	modules: [
-		'@nuxtjs/style-resources',
-	],
+	modules: ['@nuxtjs/style-resources'],
 
 	// Build configuration --------------------------------------------------------------------------------------------/
 	build: {
