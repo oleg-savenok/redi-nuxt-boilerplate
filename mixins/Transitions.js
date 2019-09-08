@@ -19,7 +19,7 @@ export default {
         leave(el, done) {
 	        this.$tween.to(el, 0.3, {
 		        alpha: 0,
-		        onComplete: function() {
+		        onComplete: () => {
 			        done();
 			        Events.dispatchEvent(TRANSITION_LEAVE_DONE);
 		        }
@@ -31,7 +31,7 @@ export default {
         enter(el, done) {
 	        this.$tween.to(el, 0.4,{
 		        alpha: 1,
-		        onComplete: function() {
+		        onComplete: () => {
 			        done();
 			        Events.dispatchEvent(TRANSITION_ENTER_DONE);
 		        }
