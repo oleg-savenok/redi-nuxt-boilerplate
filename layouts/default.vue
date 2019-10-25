@@ -6,6 +6,7 @@
 		<div ref="scroll" class="__scroll">
 			<nuxt ref="page" class="__page"/>
 		</div>
+		<ScrollBar />
 		<Mouse />
 	</div>
 </template>
@@ -20,6 +21,7 @@
 	// Components
 	import Header from '~/components/organisms/Header';
 	import Mouse from '~/components/organisms/Mouse';
+    import ScrollBar from '../components/organisms/ScrollBar';
 	
 	// Event dispatcher
 	import { Events, TRANSITION_ENTER_DONE, TRANSITION_LEAVE_DONE } from "~/assets/js/Events";
@@ -28,7 +30,8 @@
 		name: 'Default',
 		components: {
 			Header,
-			Mouse
+			Mouse,
+            ScrollBar
 		},
 		mixins: [ LifecycleHooks ],
 		computed: {
