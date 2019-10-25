@@ -1,14 +1,14 @@
 /* [store] Theme */
 
 export const state = () => ({
-	theme: 'dark',
+	theme: 'light',
 	colors: {
 		black: '#101010',
 		white: '#fafafa',
 	},
 	schema: {
-		primary: '#101010',
-		contrast: '#fafafa',
+		primary: '#fafafa',
+		contrast: '#101010',
 	},
 });
 
