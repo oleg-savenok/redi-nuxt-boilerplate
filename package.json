@@ -13,6 +13,7 @@
     "dependencies": {
         "@nuxtjs/style-resources": "^0.1.2",
         "animejs": "^3.1.0",
+        "axios": "^0.19.2",
         "cross-env": "^5.2.0",
         "detect-browser": "^4.6.0",
         "dom-events": "^0.1.1",
